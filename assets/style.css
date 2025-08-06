@@ -33,9 +33,17 @@ header {
      /* vertical offset will with positive numbers set the shadow below and  negative above. Both are mandatory (the third value set the blur */
     box-shadow: 0 2px 2px #3a3a3a;
 }
+ header a {
+    text-decoration: none;
+    color: inherit;
+ }
 
+ /* styling of the logo */
 h1 {
     font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
 }
 /* main content */
 main {
