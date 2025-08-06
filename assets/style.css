@@ -16,9 +16,22 @@ body {
     flex-direction: column;
     font-family: 'Lato', sans-serif;
 }
+
+/* mobile first styling */
 /* header */
 header {
-    background-color: lightcoral;
+    background-color: #ffffff;
+    /* padding left and right to prevent the navbar sticking to the sides of the screen */
+    padding: 0 1rem;
+    /* to make the navbar to scroll along we set to position to fix and use z-index, 99 is good as it makes sure it is layered on the top of any elements */
+    position:fixed;
+    z-index: 99;
+    /* to make header to go again on whole width of page add width 100% */
+    width:100%;
+    /* adding depth and making better user experience is done with box shadow, negative number sets it to left positive right first number is horizontal offset - we dont need so set to zero*/
+
+     /* vertical offset will with positive numbers set the shadow below and  negative above. Both are mandatory (the third value set the blur */
+    box-shadow: 0 2px 2px #3a3a3a;
 }
 
 h1 {
