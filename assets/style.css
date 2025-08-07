@@ -31,11 +31,18 @@ header {
     /* adding depth and making better user experience is done with box shadow, negative number sets it to left positive right first number is horizontal offset - we dont need so set to zero*/
 
      /* vertical offset will with positive numbers set the shadow below and  negative above. Both are mandatory (the third value set the blur */
+
     box-shadow: 0 2px 2px #3a3a3a;
+     /* to make toggle next to logo */
+    display: flex;
+    justify-content: space-between;
+    /* to make sure they align inline vertically */
+    align-items: baseline;
 }
  header a {
     text-decoration: none;
     color: inherit;
+   
  }
 
  /* styling of the logo */
@@ -76,6 +83,20 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    /* to make sure the toggle does not cover whole header we add top 100% tells the navigation element that the top element should start at the bottom of its parent (0% is on the top of the parent, 100% is on the bottom of the parent*/
+    top: 100%;
+}
+
+/* nav toggle */
+
+#nav-toggle:checked~nav {
+    display:block;
+}
+#nav-toggle {
+    display: none;
+}
+.nav-toggle-label {
+    font-size: 2rem
 }
 /* main content */
 main {
