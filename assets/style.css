@@ -64,7 +64,19 @@ h1 {
 
 }
 
+/* navbar styles with dropdown toggle
+*/
 
+nav {
+    /* position absolute take that away from normal flow of the page structure, its positioned relative from the nearest positioned ancestors - the header in this case */
+    position: absolute;
+    background-color:#ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+}
 /* main content */
 main {
     background-color:lightblue;
