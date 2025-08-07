@@ -103,6 +103,8 @@ main {
     background-color:lightblue;
     /* makes sure that any surplus of space will be taken and footer stays at the bottom*/
     flex: 1 0 auto;
+    /* to make content visible have to push it down with margin top */
+    margin-top: 47px;
 
 }
 /* footer */
