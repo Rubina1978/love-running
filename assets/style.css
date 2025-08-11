@@ -108,10 +108,19 @@ main {
 
 }
 /* footer */
-footer {
-    background-color: orange;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
-
+/* styling of the icons */
+#social-networks i {
+    font-size: 160%;
+    padding:5%;
+    color:#3a3a3a;
+}
 /* media querie for tablets and larger (768px and up) */
 
 @media screen and (min-width: 768px) {
@@ -144,6 +153,7 @@ main
 {
     margin-top:79px;
 }
+
 }
 
 @media screen and (min-width: 992px) {
