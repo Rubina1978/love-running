@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
+    
 }
 
 /* mobile first styling */
@@ -100,12 +101,21 @@ nav {
 }
 /* main content */
 main {
-    background-color:lightblue;
+    
     /* makes sure that any surplus of space will be taken and footer stays at the bottom*/
     flex: 1 0 auto;
     /* to make content visible have to push it down with margin top */
     margin-top: 47px;
 
+}
+/* hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../assets/images/hero-image.webp") no-repeat center center / cover ;
+    position:relative
+    
+   
 }
 /* footer */
 #social-networks {
@@ -133,6 +143,7 @@ main {
         width: fit-content;
         padding-right: 1rem;
     }
+
 #menu {
     display: flex;
     
@@ -161,5 +172,6 @@ main
 #menu a:hover{
     border-bottom: 1px solid #3a3a3a;
 }
-}    
+   
 
+}
