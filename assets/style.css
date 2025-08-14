@@ -17,6 +17,13 @@ body {
     font-family: 'Lato', sans-serif;
     
 }
+ /* styling of the logo */
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
 
 /* mobile first styling */
 /* header */
@@ -112,12 +119,27 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../assets/images/hero-image.webp") no-repeat center center / cover ;
-    position:relative
-    
+    background: url("../assets/images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
    
 }
+#cover-text {
+    /* final rgba value sets the opacity so it is semi transparent */
+    background-color: rgba(241, 109, 107, 0.7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width:80%;
+    min-height: 200px;
+    padding-top:40px;
+    padding-left: 10px;
+}
+#cover-text h2, #cover-text h3 {
+    color:#ffffff;
+}
+
 /* footer */
+
 #social-networks {
     text-align: center;
     padding: 20px 0;
@@ -164,7 +186,10 @@ main
 {
     margin-top:79px;
 }
-
+/* #hero */
+#cover-text {
+   width: 300px;
+   right:50px;
 }
 
 @media screen and (min-width: 992px) {
