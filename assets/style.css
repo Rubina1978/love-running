@@ -192,7 +192,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: center;
+    
 }
 
 /* media querie for tablets and larger (768px and up) */
@@ -233,12 +233,51 @@ main
    width: 300px;
    right:50px;
 }
+ /* reasons section */
+   #befits-physical,
+   #benefits-mental {
+    display:flex;
+    flex-direction: column;
+    width:100%;
+
+}
+#befits-physical > div,
+#benefits-mental > div {
+    width:75%;
+}
+/* get the mental benefits to right */
+#benefits-mental > div {
+    text-align: end;
+    align-self: flex-end;
+}
 }
 @media screen and (min-width: 992px) {
     /* larger devices laptops and desktops, 992 and up*/
 #menu a:hover{
     border-bottom: 1px solid #3a3a3a;
 }
-   
+}
+@media screen and (min-width: 1200px) {
+    /* larger devices laptops and desktops, 1200 and up*/
+  #benefits {
+    display: flex;
+    flex-direction: row;
+  }
+#benefits > div {
+    flex: 1;
+}   
 
+#benefits-image {
+    order: 0;
+} 
+#benefits-mental {
+    order: 1;
+}
+#benefits-mental >div {
+align-self: flex-start;
+}
+#benefits-physical >div {
+    align-self: flex-end;
+
+    }
 }
