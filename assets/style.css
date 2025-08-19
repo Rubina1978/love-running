@@ -228,6 +228,15 @@ main {
     /* creates grid of meetup time divs over the background image */
     border: 2px solid white;;
 }
+/* media query: large landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        /* we tell browser to display photos in columns and by number give how many columns we want */
+        column-count:2;
+        column-gap: 0;
+    }
+}
+
 
 
 /* media querie for tablets and larger (768px and up) */
@@ -263,6 +272,8 @@ main
 {
     margin-top:79px;
 }
+
+
 /* #hero */
 #cover-text {
    width: 300px;
@@ -284,6 +295,11 @@ main
 #benefits-mental > div {
     text-align: end;
     align-self: flex-end;
+}
+/* gallery */
+#photos {
+    column-count: 3;
+    
 }
 }
 @media screen and (min-width: 992px) {
@@ -314,5 +330,9 @@ align-self: flex-start;
 #benefits-physical >div {
     align-self: flex-end;
 
+    }
+    /* gallery */
+    #photos {
+        column-count: 4;
     }
 }
