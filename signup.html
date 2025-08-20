@@ -35,31 +35,34 @@
 
     <!-- main -->
     <main>
-        <section id="signup">
-        <h2><i class="fa-solid fa-heart-pulse"></i> Let get you Sign Up!</h2>
-        <form action="https://formdump.codeinstitute.net" method="POST">
-            <label for="name1">First name</label>
-            <input type="text" id="name1" name="name" required>
+        <section id="signup">  
+        
+        <form id="signup-form" action="https://formdump.codeinstitute.net" method="POST">
+           <h2><i class="fa-solid fa-heart-pulse"></i> Let get you Sign Up!</h2> 
+           <label for="name">First name</label>
+            <input type="text" id="name" name="first-name" class="text-input" required>
             <br>
-            <label for="name2">Last name</label>
-            <input type="text" id="name2" name="name" required>
+            <label for="name">Last name</label>
+            <input type="text" id="name" name="last-name" class="text-input" required>
             <br>
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email-address">Email Address</label>
+            <input type="email" id="email-address" name="email-address" class="text-input" required>
             <br>
+            <div class="radio-buttons">
             <div>
             <label for="road">Road</label>
-            <input type="radio" id="road" name="run" value="road">
+            <input type="radio" id="road" name="running-preference" value="road" required>
             </div>
             <div>
             <label for ="trail">Trail</label>
-            <input type="radio" id="trail" name="run" value="trail">
+            <input type="radio" id="trail" name="running-preference" value="trail" required>
             </div>
             <div>
             <label for="both">both</label>
-            <input type="radio" id="both" name="run" value="both">
+            <input type="radio" id="both" name="running-preference" value="both" required>
             </div>
-            <button><input type="button" name="join-button">Let's Run!</button>
+            </div>
+            <button type="submit" class="join-button">Let's Run!</button>
         </form>
     </section>
     </main>
@@ -78,7 +81,8 @@
         </ul>
     </footer>
 <!-- font Awesome kit->
- <!-- copy to text placeholder -->
+ 
+ copy to text placeholder -->
 <script src="https://kit.fontawesome.com/68be089ad3.js" crossorigin="anonymous"></script>
     
 </body>
